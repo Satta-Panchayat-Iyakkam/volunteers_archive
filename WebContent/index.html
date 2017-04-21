@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/scripts.js"></script>
+<link href="css/jquery-ui.css" rel="stylesheet">
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1>Sattapanchayat Dashboard</h1>
+			<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+				<p>
+					<input type="text" class="user" name="user" placeholder="Username" ng-model="user"
+						required> <span style="color: white;"
+						ng-show="myForm.user.$dirty && myForm.user.$invalid"> <span
+						ng-show="myForm.user.$error.required">Username is required.</span>
+					</span>
+				</p>
+				<p>
+					<input type="password" class="password" name="password" placeholder="Password" ng-model="password"
+						required> <span style="color: white"
+						ng-show="myForm.password.$dirty && myForm.password.$invalid"> <span
+						ng-show="myForm.password.$error.required">Password is required.</span>
+					</span>
+				</p>
+				<p>
+					<button type="submit" id="dialog-link" ng-click='go()'>Login</button>
+				</p> 
+			</form>
+		</div>
+		<ul class="bg-bubbles">
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+	</div>
+	<script>
+	</script>
+</body>
+</html>
