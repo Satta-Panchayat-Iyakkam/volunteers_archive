@@ -95,13 +95,13 @@ body :-ms-input-placeholder {
 }
 
 
-.container {
+/*.container {
   max-width: 600px;
   margin: 0 auto;
   padding: 80px 0;
   height: 400px;
   text-align: center;
-}
+}*/
 .container h1 {
   font-size: 50px;
   -webkit-transition-duration: 1s;
@@ -109,7 +109,7 @@ body :-ms-input-placeholder {
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
   font-weight: 200;
-  font-family: French Script MT;
+
 }
 h2 {
   font-size: 50px;
@@ -118,7 +118,7 @@ h2 {
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
   font-weight: 150;
-  font-family: French Script MT;
+
 }
 form {
   padding: 20px 0;
@@ -187,7 +187,7 @@ background-image:url('password.png');
   width: 300px;
   color: #53e3a6;
 }
- 
+
  .search{
 	background-image:url('user.png');
   background-repeat:no-repeat;
@@ -200,7 +200,7 @@ background-image:url('password.png');
   width: 250px;
   border-radius: 3px;
   padding: 10px 15px;
-  margin: 0 auto 10px auto;
+  margin: 0;
   display: block;
   text-align: center;
   font-size: 18px;
@@ -248,8 +248,8 @@ background-image:url('password.png');
   color: #53e3a6;
 }
 
- 
- 
+
+
 form button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -269,8 +269,8 @@ form button {
 form button:hover {
   background-color: #f5f7f9;
 }
- 
- 
+
+
 .bg-bubbles {
   position: absolute;
   top: 0;
@@ -381,7 +381,7 @@ form button:hover {
             transform: translateY(-700px) rotate(600deg);
   }
 }
- 
+
 /* vietnamese */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -430,14 +430,14 @@ form button:hover {
   src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
- 
- 
- 
+
+
+
 #dialog{
   width: 50%;
   margin:0 auto;
 }
- 
+
 #dialogoverlay{
                 opacity: .8;
                 position: fixed;
@@ -460,17 +460,17 @@ form button:hover {
 }
 #dialogbox > div >
 #dialogboxbody{
-                background:#333; 
+                background:#333;
                 color:#FFF;
                 padding: 10px;
 }
 #dialogbox > div >
 #dialogboxfoot{
-                background: #666; 
+                background: #666;
                 text-align:right;
                 padding: 10px;
 }
- 
+
 #dialog button{
                 outline: 0;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -482,14 +482,14 @@ form button:hover {
 #dialog button :hover{
      background: #CF7A7A;
 }
- 
+
 #dialog button :active span {
     -webkit-transform: translate(0, 4px);
     -moz-transform: translate(0, 4px);
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
 }
- 
+
 button {
   transition: all .1s linear;
 }
@@ -507,19 +507,19 @@ button:active {
 	width:100%;
 	box-shadow: 10px 10px 5px #888888;
 	border:1px solid #fff9f9;
-	
+
 	-moz-border-radius-bottomleft:8px;
 	-webkit-border-bottom-left-radius:8px;
 	border-bottom-left-radius:8px;
-	
+
 	-moz-border-radius-bottomright:8px;
 	-webkit-border-bottom-right-radius:8px;
 	border-bottom-right-radius:8px;
-	
+
 	-moz-border-radius-topright:8px;
 	-webkit-border-top-right-radius:8px;
 	border-top-right-radius:8px;
-	
+
 	-moz-border-radius-topleft:8px;
 	-webkit-border-top-left-radius:8px;
 	border-top-left-radius:8px;
@@ -548,13 +548,13 @@ button:active {
 	-webkit-border-bottom-left-radius:8px;
 	border-bottom-left-radius:8px;
 }.CSSTableGenerator tr:hover td{
-	
+
 }
 .CSSTableGenerator tr:nth-child(odd){ background-color:#aaffff; }
 .CSSTableGenerator tr:nth-child(even)    { background-color:#effcf6; }.CSSTableGenerator td{
 	vertical-align:middle;
-	
-	
+
+
 	border:1px solid #fff9f9;
 	border-width:0px 1px 1px 0px;
 	text-align:center;
@@ -633,11 +633,11 @@ button:active {
 .card:hover {
   transform: rotateY(360deg);
   color: #0087cc;
- 
+
 }
 .card .side {
   backface-visibility: hidden;
-  border-radius: 6px;	
+  border-radius: 6px;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -657,5 +657,11 @@ h3 {
           transition-duration: 3s;
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
-  font-family: French Script MT;
+
+}
+
+
+.search-form{
+  padding: 0;
+  background-color: #1f8e1f;
 }
