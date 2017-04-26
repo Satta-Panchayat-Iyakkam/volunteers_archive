@@ -8,25 +8,23 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<h1>Sattapanchayat Dashboard</h1>
+			<h3 class="txt-align-center">Sattapanchayat Dashboard</h3>
 			<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
-				<p>
+				<div class="col-sm-12">
 					<input type="text" class="user" name="user" placeholder="Username" ng-model="user"
-						required> <span style="color: white;"
-						ng-show="myForm.user.$dirty && myForm.user.$invalid"> <span
-						ng-show="myForm.user.$error.required">Username is required.</span>
+						required> <p  class="form-errors" ng-show="myForm.user.$dirty && myForm.user.$invalid"> <span
+						ng-show="myForm.user.$error.required">Username is required.</p>
 					</span>
-				</p>
-				<p>
+				</div>
+				<div class="col-sm-12">
 					<input type="password" class="password" name="password" placeholder="Password" ng-model="password"
-						required> <span style="color: white"
-						ng-show="myForm.password.$dirty && myForm.password.$invalid"> <span
+						required> <p class="form-errors"  ng-show="myForm.password.$dirty && myForm.password.$invalid"> <span
 						ng-show="myForm.password.$error.required">Password is required.</span>
-					</span>
-				</p>
-				<p>
+					</p>
+				</div>
+				<div class="col-sm-12 txt-align-center">
 					<button type="submit" id="dialog-link" ng-click='go()'>Login</button>
-				</p> 
+				</div>
 			</form>
 		</div>
 		<ul class="bg-bubbles">

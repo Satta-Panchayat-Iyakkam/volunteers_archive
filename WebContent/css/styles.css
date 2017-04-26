@@ -685,3 +685,13 @@ h3 {
 .search-table tbody tr td{
   color:#252424;
 }
+
+.form-errors{
+  color: #FFF;
+  text-align:center;
+  margin: 10px 0;
+}
+
+.txt-align-center{
+  text-align: center;
+}
