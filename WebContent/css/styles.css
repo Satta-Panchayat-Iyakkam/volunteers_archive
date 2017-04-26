@@ -214,7 +214,7 @@ background-image:url('password.png');
 }
 .search:focus {
   background-color: white;
-  width: 300px;
+  /*width: 300px;  <--- commenting because this affects responsiveness*/
   color: #53e3a6;
 }
 
@@ -244,7 +244,7 @@ background-image:url('password.png');
 }
 .searchButton:focus {
   background-color: white;
-  width: 300px;
+  /*width: 300px;*/
   color: #53e3a6;
 }
 
@@ -664,4 +664,24 @@ h3 {
 .search-form{
   padding: 0;
   background-color: #1f8e1f;
+}
+
+.search-form .form-title{
+  margin: 10px 0 20px 15px;
+}
+
+.search-form .search{
+  margin: 0 0 20px 0;
+}
+
+.search-form .searchButton{
+  margin: 0 0 0 15px;
+}
+
+.search-table thead tr th{
+  background-color: #f39c12;
+}
+
+.search-table tbody tr td{
+  color:#252424;
 }
