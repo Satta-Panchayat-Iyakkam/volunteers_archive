@@ -1,90 +1,81 @@
 <!doctype html>
 <html lang="en" ng-app="angularTable">
 <head>
-<meta charset="utf-8">
-<title>SPI-Dashboard</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css"
-	href="css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>SPI-Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/angular-responsive-tables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body ng-controller="listdata">
 
-	<form id="down" class="form">
-		<div id="section" style="padding-right: 200px;padding-left: 200px;">
-<div id='content'style="background-color: #059F4B; height: 220px; width: 100%; padding-top: 10px;">
-			<table style="width: 100%;">
-				<h2>Find member</h2>
-				<tr>
-					<td><input type="text"
-								class="search" id="Name" name="Name" ng-model='Name'
-								placeholder="Name"> 
-					</td>
-					<td><input type="text"
-								class="search" id="Mobile_Number" name="Mobile_Number"  ng-model='Mobile_Number'
-								placeholder="Mobile Number">
-					</td>
-					<td>
-								<select class="search" id="District" placeholder="District"  ng-model="District">
-								  <option>District</option>
-								   <option>AYI - Ariyalur  </option> 
-									 <option>CHN - Chennai  </option>
-									 <option>CBE - Coimbatore  </option> 
-									 <option>CUD - Cuddalore  </option> 
-									 <option>DPI - Dharmapuri  </option>
-									 <option>DGL - Dindigul  </option> 
-									 <option>ERD - Erode  </option> 
-									 <option>KPM - Kanchipuram  </option>
-									 <option>KKM - Kanyakumari  </option> 
-									 <option>KKL - Karaikal  </option> 
-									 <option>KAR - Karur  </option>
-									 <option>KGI - Krishnagiri  </option> 
-									 <option>MDU - Madurai  </option> 
-									 <option>NGP - Nagapattinam  </option>
-									 <option>NLG - Nilgiris  </option> 
-									 <option>NMK - Namakkal  </option> 
-									 <option>PMB - Perambalur  </option>
-									 <option>POD - Puducherry  </option> 
-									 <option>PDK - Pudukkottai  </option>
-									 <option>RMD - Ramanathapuram  </option> 
-									 <option>SLM - Salem  </option> 
-									 <option>SVG - Sivaganga  </option>
-									 <option>TRP - Tirupur  </option> 
-									 <option>TRY - Tiruchirappalli  </option> 
-									 <option>THN - Theni  </option>
-									 <option>TNV - Tirunelveli  </option> 
-									 <option>TNJ - Thanjavur  </option> 
-									 <option>TTK - Thoothukudi  </option>
-									 <option>TVL - Tiruvallur  </option> 
-									 <option>TVR - Tiruvarur  </option> 
-									 <option>TVM - Tiruvannaamalai  </option>
-									 <option>VLR - Vellore  </option> 
-									 <option>VPM - Viluppuram  </option> 
-									 <option>VNR - Virudhunagar <option>
-								</select>
-					</td>
-				</tr>
-				<tr>
-					<td>
-					</td>
-					<td><button class="searchButton" type="submit" id="dialog-link" ng-click='go()' >Search</button>
-					</td>
-					<td>
-					</td>
-				</tr>
-			</table>
-			</div>
+<body ng-controller="listdata">
+<section class="search-form">
+	<form id="down" class="form container">
+  <h3 class="form-title">Search Members</h3>
+    <div id="section">
+							<div id='content'>
+								<div class="col-sm-12 col-md-3">
+									<input type="text" class="search" id="Name" name="Name" ng-model='Name' placeholder="Name">
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<td><input type="text" class="search" id="Mobile_Number" name="Mobile_Number"  ng-model='Mobile_Number' placeholder="Mobile Number">
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<select class="search" id="District" placeholder="District"  ng-model="District">
+										 <option>District</option>
+										 <option>AYI - Ariyalur  </option>
+										 <option>CHN - Chennai  </option>
+										 <option>CBE - Coimbatore  </option>
+										 <option>CUD - Cuddalore  </option>
+										 <option>DPI - Dharmapuri  </option>
+										 <option>DGL - Dindigul  </option>
+										 <option>ERD - Erode  </option>
+										 <option>KPM - Kanchipuram  </option>
+										 <option>KKM - Kanyakumari  </option>
+										 <option>KKL - Karaikal  </option>
+										 <option>KAR - Karur  </option>
+										 <option>KGI - Krishnagiri  </option>
+										 <option>MDU - Madurai  </option>
+										 <option>NGP - Nagapattinam  </option>
+										 <option>NLG - Nilgiris  </option>
+										 <option>NMK - Namakkal  </option>
+										 <option>PMB - Perambalur  </option>
+										 <option>POD - Puducherry  </option>
+										 <option>PDK - Pudukkottai  </option>
+										 <option>RMD - Ramanathapuram  </option>
+										 <option>SLM - Salem  </option>
+										 <option>SVG - Sivaganga  </option>
+										 <option>TRP - Tirupur  </option>
+										 <option>TRY - Tiruchirappalli  </option>
+										 <option>THN - Theni  </option>
+										 <option>TNV - Tirunelveli  </option>
+										 <option>TNJ - Thanjavur  </option>
+										 <option>TTK - Thoothukudi  </option>
+										 <option>TVL - Tiruvallur  </option>
+										 <option>TVR - Tiruvarur  </option>
+										 <option>TVM - Tiruvannaamalai  </option>
+										 <option>VLR - Vellore  </option>
+										 <option>VPM - Viluppuram  </option>
+										 <option>VNR - Virudhunagar <option>
+									</select>
+								</div>
+                <button class="searchButton col-sm-12 col-md-3" type="submit" id="dialog-link" ng-click='go()'>Search</button>
+						</div>
 		</div>
 	</form>
+	</section>
+
+
 	<div role="main" class=" theme-showcase">
-	
+
 		<div class="" style="margin-top: 10px;">
 				<div class="bs-component" >
 					<form class="form-inline" style="width: 100%;" >
 						<div class="form-group" style="width: 100%;">
-						<table  style="width: 100%;">
+						<table  style="width: 100%;>
 							<tr>
-								<td style="float: left;"><label>Search</label> 
+								<td style="float: left;"><label>Search</label>
 								<input type="text" ng-model="search" class="form-control" placeholder="Search">
 								</td>
 								<td style="padding-left: 50px">
@@ -98,8 +89,7 @@
 								</table>
 						</div>
 					</form>
-					<table class="table table-striped table-hover"
-						style="color: black; background-color: #E5F3D3; width: 100%">
+					<table class="table table-striped table-hover search-table">
 						<thead>
 							<tr>
 								<th ng-click="sort('memberid')">Member Idd<span
@@ -155,6 +145,7 @@
 		</div>
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/dirPagination.js"></script>
+  <script src="lib/angular-responsive-tables.min.js"></script>
 <script src="js/scripts.js"></script>
 	<!-- <script src="app/app.js"></script> -->
 </body>
